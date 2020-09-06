@@ -10,12 +10,12 @@ subject_train <- read.csv("./UCI HAR Dataset/train/subject_train.txt", sep = "",
 
 # include subjects and activity
 
-testData <- cbind(subject_test, activity_test, testData)
-trainData <- cbind(subject_train, activity_train, trainData)
+testData_total <- cbind(subject_test, activity_test, testData)
+trainData_total <- cbind(subject_train, activity_train, trainData)
 
 # merge test and train data
 
-mergedData <- rbind(testData, trainData)
+mergedData <- rbind(testData_total, trainData_total)
 
 # extract subjects, activity, mean and std measurements (adds 2 to the column index vector)
 
