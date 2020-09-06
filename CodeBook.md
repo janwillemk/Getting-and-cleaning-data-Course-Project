@@ -1,6 +1,21 @@
+Descriptions of the variables used in the script:
+
+testData - features of the test data (2947x561)
+trainData - features of the train data (7352x561)
+activity_test - activities of the test data (2947x1)
+subject_test - subjects of the test data (2947x1)
+activity_train - activities of the train data (7352x1)
+subject_train - subjects of the train data (7352x1)
+testData_total - combined test data (2947x563)
+trainData_total - combined train data (7352x563)
+mergedData - combined test and train data (10299x563)
+mergedData_meanstd - selected features (mean and std) of the combined data (10299x64)
+feature_desciptions - feature descriptions read from features.txt (561x2)
+mergedData_meanstd_dt - data.table of mergedData_meanstd (10299x64)
+tidyData - mean values of selected features by subject and activity (180x64)
 
 
-
+Extracted features:
 
 "tBodyAcc-mean()-X"
 "tBodyAcc-mean()-Y"
